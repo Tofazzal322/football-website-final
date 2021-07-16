@@ -1,0 +1,345 @@
+/* -----------fonts section----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* ---------common styles start------------- */
+body{
+    margin: 0%;
+    padding: 0;
+    background-color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+}
+/* ---------common styles end------------- */
+
+/* ----------header start ------------- */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  
+}
+
+/* -----------Navbar links--------------- */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#login{
+   margin-left: 500px;
+    position: relative;
+    
+}
+
+/*----------- Navbar links on mouse-over----------- */
+.navbar a:hover {
+  background-color: #000;
+
+}
+
+/*--------- Current/active navbar link-------- */
+.active {
+  background-color: #04AA6D;
+}
+/* ----------header end ------------- */
+
+
+
+
+
+
+/* -------------top banner styles start ---------- */
+
+.top-banner{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: rgb(34, 11, 238);
+    
+}
+
+.top-banner:hover{
+    background-color: rgb(149, 204, 46);
+    transition-duration: 2000ms;
+
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-column-gap: 30px; */
+    justify-items: center;
+}
+
+
+/* .banner-text{
+    width: auto;
+} */
+
+.banner-title{
+    color: seashell;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 70px;  
+}
+
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: red;
+    border-radius: 10px;
+    
+}
+
+
+.btn a{
+    margin-top: 50px;
+    text-decoration: none;
+    color: seashell;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+
+.banner img{
+    width: 85%;
+    height: 80%;
+   
+}
+
+/* -------------top banner styles end ---------- */
+
+
+/* /////////////////////////////////////////////////////////// */
+
+
+/* ---------------all player sectiion styles start ---------------*/
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+
+    
+}
+
+
+.all-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;  
+    justify-items: center;
+    width: 80%;
+
+    
+    
+    
+
+    
+}
+
+
+.player{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);    
+}
+
+
+.player-img{
+    width: 100%;
+}
+
+
+.player-name{
+    width: 300px;
+    font-size: 20px;
+}
+
+
+.player-details{
+    /* width: 300px; */
+    font-size: 12px;
+    opacity: 80%;
+    margin-top: -5px;
+} 
+/* ---------------all player sectiion styles end ---------------*/
+
+/* ///////////////////////////////////////////////// */
+
+/* ----------Highlight styles start ------------*/
+
+.all-highlights{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background-color: lawngreen; */
+    /* padding-bottom: 20px; */
+
+}
+
+
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 80%;
+    /* background-color: #ffffff; */
+    /* border: 1px solid rgb(122, 122, 122); */
+    /* padding: 15px; */
+
+}
+
+.highlight-text{
+    width: 100%;
+    /* background-color: khaki; */
+    /* border: 1px solid red; */
+
+}
+
+.highlight-titlle{
+    font-size: 2em;
+    line-height: 60px;
+}
+
+.paragraph{
+    opacity: 80%;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.match-image{
+    width: 100%;
+    /* background-color: rgb(81, 19, 224); */
+}
+
+.match-image img{
+    margin-top: 5px;
+    width: 100%;
+    /* border: 1px solid red; */
+
+} 
+
+
+
+
+/* ----------Highlight styles end ------------*/
+
+/* ////////////////////////////////////////////////////// */
+
+/* ------------footer styles start ----------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #ffffff;
+    /* border-top: 2px solid rgb(56, 54, 54); */
+    box-shadow: 0px 0px 10px   #888888;
+    
+}
+
+.logo{
+    margin-top: 10px;
+
+}
+
+.logo-image{
+    width: 350px;
+}
+
+.all-icon{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20PX;
+}
+
+.socail-icon img{
+    width: 40px;
+    padding: 10px;
+}
+
+
+.copyright{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 90%;
+    text-align: center;
+    margin-top: -20PX;
+    
+}
+
+
+
+/* ------------footer styles end ----------------- */
+
+/* ///////////////////////////////////////////////////////////////// */
+
+/* --------------Media Queries -------------*/
+
+/* ----------------Mobile devices------------ */
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media only screen and (max-width: 588px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+@media only screen and (max-width:688px) {
+
+    .all-player{ 
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+}
+
+
+    .highlights{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;  
+    padding-left: 80px;
+    margin-top: 50px;
+    line-height: normal;
+}
+
+    .match-image{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+
+    .banner{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+}
+
+    .banner-image img{
+    width: 100%;
+    padding-top: 20px;
+}
+
+    .top-banner{
+    background-color: none;
+}
+
+#login{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+}
+
+/* ////////////////////////////////////// The  End ///////////////////////////////// */
